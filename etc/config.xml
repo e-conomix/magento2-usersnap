@@ -1,0 +1,10 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <economix_usersnap>
+            <configuration>
+                <enable>0</enable>
+                <widget_key>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</widget_key>
+            </configuration>
+        </economix_usersnap>
+    </default>
+</config>
