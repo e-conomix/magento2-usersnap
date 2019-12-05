@@ -1,0 +1,19 @@
+<?php
+/**
+ * @author Dipl.-Ing. Andreas Schrammel, BSc. <schrammel@e-conomix.at>
+ * @copyright Copyright (c) 2019 E-CONOMIX GmbH (https://www.e-conomix.at)
+ * @created 05.12.2019
+ */
+ 
+/** @var \Economix\Usersnap\Block\FrontendWidget $block */
+?>
+<script type="text/javascript">
+    (function() {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = '//api.usersnap.com/load/<?= $block->getProjectApiKey(); ?>.js';
+        
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x); })();
+</script>
