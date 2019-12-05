@@ -2,3 +2,6 @@
 "Configuration","Konfiguration"
 "Enabled","Aktiviert"
 "Widget Key","Widget ID"
+"The project API key can be found in your <a href=""https://www.usersnap.com"" target=""_blank"">Usersnap</a> project.","Der Projekt API Key ist im <a href=""https://www.usersnap.com"" target=""_blank"">Usersnap</a> Projekt zu finden."
+"Enabled in Frontend","Im Kunden-Bereich aktiviert"
+"Enabled in Backend","Im Admin-Bereich aktiviert"

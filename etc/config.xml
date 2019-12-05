@@ -3,7 +3,9 @@
         <economix_usersnap>
             <configuration>
                 <enable>0</enable>
-                <widget_key>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</widget_key>
+                <project_api_key>xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx</project_api_key>
+                <enable_frontend>0</enable_frontend>
+                <enable_backend>0</enable_backend>
             </configuration>
         </economix_usersnap>
     </default>
