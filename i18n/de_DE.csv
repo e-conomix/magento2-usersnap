@@ -5,3 +5,8 @@
 "The project API key can be found in your <a href=""https://www.usersnap.com"" target=""_blank"">Usersnap</a> project.","Der Projekt API Key ist im <a href=""https://www.usersnap.com"" target=""_blank"">Usersnap</a> Projekt zu finden."
 "Enabled in Frontend","Im Kunden-Bereich aktiviert"
 "Enabled in Backend","Im Admin-Bereich aktiviert"
+"IP Restrictions","IP Restriktionen"
+"Information","Information"
+"<b>IP restrictions</b> give you the ability to show Usersnap widget only if the user comes with an IP address that is whitelisted.","<b>IP Restriktionen</b> ermöglichen es, dass das Usersnap Widget nur angezeigt wird, wenn der User von einer freigegeben IP-Adresse auf die Seite zugreift."
+"IP Whitelist","Freigegebene IPs"
+"Enter one IP or IP range to whitelist per line.","Eine IP-Adresse oder IP-Range, die freigegeben werden soll, pro Zeile."

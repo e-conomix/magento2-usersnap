@@ -32,6 +32,27 @@
                     </depends>
                 </field>
             </group>
+            <group id="ip_restriction" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>IP Restrictions</label>
+                <depends>
+                    <field id="economix_usersnap/configuration/enable">1</field>
+                </depends>
+                <field id="info" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Information</label>
+                    <frontend_model>Economix\Usersnap\Block\System\Config\IpRestrictionInformation</frontend_model>
+                </field>
+                <field id="enable" translate="label" type="select" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="whitelist" translate="label comment" type="textarea" sortOrder="3" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>IP Whitelist</label>
+                    <comment>Enter one IP or IP range to whitelist per line.</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+            </group>
         </section>
     </system>
 </config>

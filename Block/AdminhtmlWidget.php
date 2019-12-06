@@ -15,10 +15,10 @@ class AdminhtmlWidget extends GenericWidget
 {
     public function toHtml()
     {
-        return (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_BACKEND_ENABLED_PATH) ? parent::toHtml() : '';
+        return (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_CONFIG_BACKEND_ENABLED_PATH) ? parent::toHtml() : '';
         
-        $enable = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_ENABLED_PATH);
-        $enableBe = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_BACKEND_ENABLED_PATH);
+        $enable = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_CONFIG_ENABLED_PATH);
+        $enableBe = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_CONFIG_BACKEND_ENABLED_PATH);
         
         return ($enable && $enableBe) ? parent::toHtml() : '';
     }

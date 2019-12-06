@@ -15,10 +15,10 @@ class FrontendWidget extends GenericWidget
 {
     public function toHtml()
     {
-        return (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_FRONTEND_ENABLED_PATH) ? parent::toHtml() : '';
+        return (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_CONFIG_FRONTEND_ENABLED_PATH) ? parent::toHtml() : '';
         
-        $enable = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_ENABLED_PATH);
-        $enableFe = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_FRONTEND_ENABLED_PATH);
+        $enable = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_CONFIG_ENABLED_PATH);
+        $enableFe = (bool)$this->_scopeConfig->getValue(Constants::USERSNAP_CONFIG_FRONTEND_ENABLED_PATH);
         
         return ($enable && $enableFe) ? parent::toHtml() : '';
     }
