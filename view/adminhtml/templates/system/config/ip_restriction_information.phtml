@@ -1,0 +1,21 @@
+<?php
+/**
+ * @author Dipl.-Ing. Andreas Schrammel, BSc. <schrammel@e-conomix.at>
+ * @copyright Copyright (c) 2019 E-CONOMIX GmbH (https://www.e-conomix.at)
+ * @created 06.12.2019
+ */
+
+/** @codingStandardsIgnoreFile */
+?>
+<p>
+    <?= __('<b>IP restrictions</b> give you the ability to show Usersnap widget only if the user comes with an IP address that is whitelisted.'); ?>
+</p>
+<p>
+    <b><?= __('IP Whitelist supports following formats:'); ?></b>
+    <ul>
+        <li><?= __('<b>Absolute IP address:</b> Single IP address<br>(e.g. <tt>192.168.1.10</tt>)'); ?></li>
+        <li><?= __('<b>Wildcard:</b> Asterisk as wildcard<br>(e.g. <tt>192.168.1.*</tt>)'); ?></li>
+        <li><?= __('<b>IP Range:</b> Start IP-End IP<br>(e.g. <tt>192.168.1.10-192.168.1.40</tt>)'); ?></li>
+        <li><?= __('<b>CIDR:</b> Classless Inter-Domain Routing format<br>(e.g. <tt>192.168.1.1/24</tt>)<br>A calculator for this format can be found <a href="https://www.ipaddressguide.com/cidr" target="_blank">here</a>'); ?></li>
+    </ul>
+</p>
