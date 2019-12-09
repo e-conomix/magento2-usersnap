@@ -1,4 +1,4 @@
-# Usersnap Integration for Magento 2
+# Usersnap Integration for Magento 2 with IP restriction support
 
 ## About
 This extension brings [Usersnap](https://www.usersnap.com) widget to your Magento 2 Store.
