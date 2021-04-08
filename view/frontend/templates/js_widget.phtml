@@ -8,7 +8,7 @@
         window.Usersnap = api;
     }
     var script = document.createElement('script');
-    script.defer = 1;
-    script.src = 'https://widget.usersnap.com/global/load/<?= $block->getProjectApiKey(); ?>?onload=onUsersnapCXLoad';
+    script.async = 1;
+    script.src = 'https://widget.usersnap.com/load/<?= $block->getProjectApiKey(); ?>?onload=onUsersnapCXLoad';
     document.getElementsByTagName('head')[0].appendChild(script);
 </script>
