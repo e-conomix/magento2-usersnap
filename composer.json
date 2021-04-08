@@ -2,17 +2,9 @@
   "name": "e-conomix/magento2-usersnap",
   "description": "Magento 2 Integration for Usersnap",
   "type": "magento2-module",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": [
     "GPL-3.0"
-  ],
-  "authors": [
-    {
-      "name": "Dipl.-Ing. Andreas Schrammel, BSc.",
-      "email": "schrammel@e-conomix.at",
-      "homepage": "https://www.e-conomix.at",
-      "role": "TechLead"
-    }
   ],
   "autoload": {
     "files": [
