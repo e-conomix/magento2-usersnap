@@ -17,15 +17,18 @@ class IpChecker extends \Magento\Framework\App\Helper\AbstractHelper
     /**
      * @var array
      */
-    private $whitelist;
+    private $whitelist = [];
     
     public function __construct(
         ScopeConfigInterface $scopeConfig,
-        Context $context
-    ) {
+        Context              $context
+    )
+    {
         $whitelist = $scopeConfig->getValue(Constants::USERSNAP_IP_WHITELIST_PATH);
-        $whitelist = preg_replace('~\R~u', "\n", $whitelist);
-        $this->whitelist = explode("\n", $whitelist);
+        if (!empty($whitelist)) {
+            $whitelist = preg_replace('~\R~u', "\n", $whitelist);
+            $this->whitelist = explode("\n", $whitelist);
+        }
         
         parent::__construct($context);
     }
